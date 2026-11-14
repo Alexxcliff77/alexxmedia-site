@@ -12,3 +12,35 @@ header{height:132px;display:flex;align-items:center;justify-content:space-betwee
 @media(max-width:800px){header{height:92px}.brand img{width:320px;height:72px}.menu{display:block}nav{display:none;position:absolute;top:92px;left:0;right:0;background:#0d0f12;padding:25px;flex-direction:column;align-items:flex-start}nav.open{display:flex}.hero{grid-template-columns:1fr;padding-top:9vh}.strip{overflow:auto;gap:30px;justify-content:flex-start}.sectionhead,.about,.service-body,.terms-grid{grid-template-columns:1fr}.work-grid,.portfolio-grid{grid-template-columns:1fr}.services p{min-height:auto}footer{grid-template-columns:1fr;gap:18px}footer p:last-child{text-align:left}.portfolio-page{padding-top:70px}.portfolio-hero{padding-top:60px}}
 @media(max-width:540px){.vertical-grid{grid-template-columns:1fr}.vertical-card{max-width:390px;margin:auto}.vertical-intro{margin-top:-20px}}
 @media(max-width:520px){.services{grid-template-columns:1fr}.actions{align-items:flex-start;flex-direction:column}.brand img{width:270px;height:64px}.hero h1{font-size:48px}.hero{padding-left:6vw;padding-right:6vw}.work-card>div{flex-direction:column}footer .brand img{width:320px;height:76px}}
+
+
+/* Testimonials / LinkedIn recommendations */
+.testimonials{background:#0e1115;border-top:1px solid var(--line)}
+.testimonials .sectionhead{margin-bottom:25px}
+.testimonials .sectionhead em{font-style:normal;color:var(--ruby)}
+.testimonials-intro{max-width:870px;color:#b9bdc2;line-height:1.8;font-size:16px;margin:0 0 45px}
+.testimonial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.testimonial-card{background:linear-gradient(155deg,#16191e,#101216);border:1px solid #33373d;border-top:3px solid var(--ruby);padding:30px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.testimonial-label{font-size:10px;color:var(--ruby-hi);text-transform:uppercase;font-weight:800;letter-spacing:.14em}
+.testimonial-label span{color:#727880;padding:0 8px}
+.testimonial-preview{font-size:clamp(17px,2vw,23px);line-height:1.5;font-weight:700;margin:0;color:var(--warm)}
+.testimonial-details{border-top:1px solid #ffffff25;padding-top:14px;color:#c7cacf}
+.testimonial-details summary{cursor:pointer;list-style:none;font-size:11px;letter-spacing:.09em;font-weight:800;text-transform:uppercase;color:#f3f3f3;display:inline-flex;gap:10px;align-items:center}
+.testimonial-details summary::before{content:"+";display:inline-flex;justify-content:center;align-items:center;color:var(--ruby-hi);font-size:21px;line-height:1}
+.testimonial-details[open] summary::before{content:"−"}
+.testimonial-details summary::-webkit-details-marker{display:none}
+.testimonial-details summary:hover{color:var(--ruby-hi)}
+.testimonial-details summary:focus-visible,.testimonial-attribution a:focus-visible{outline:2px solid var(--ruby-hi);outline-offset:5px}
+.testimonial-full{font-size:14px;line-height:1.8;color:#c1c5cb;margin:20px 0 0;padding-left:18px;border-left:2px solid #d7192055}
+.testimonial-full p{margin:0 0 16px}
+.testimonial-full p:last-child{margin-bottom:0}
+.testimonial-attribution{border-top:1px solid #ffffff18;padding-top:18px;display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:14px}
+.testimonial-attribution div{display:flex;flex-direction:column;gap:6px}
+.testimonial-attribution strong{font-size:14px;color:#fff}
+.testimonial-attribution span,.testimonial-source{font-size:11px;line-height:1.6;color:#9ea3aa}
+.testimonial-attribution a{font-size:11px;font-weight:800;border-bottom:1px solid var(--ruby);padding-bottom:3px}
+.testimonial-attribution a:hover,.testimonial-source a:hover{color:var(--ruby-hi)}
+.testimonial-source{margin:30px 0 0}
+.testimonial-source a{text-decoration:underline;text-decoration-color:var(--ruby);text-underline-offset:4px}
+@media(max-width:800px){.testimonial-grid{grid-template-columns:1fr}.testimonial-card{padding:24px}}
+@media(max-width:520px){.testimonial-card{padding:20px}.testimonial-preview{font-size:18px}}
